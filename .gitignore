@@ -1,3 +1,7 @@
+# Common cases
+.tmp/
+*.env
+
 # Backend specific
 /backend/bin/
 /backend/lib/python3.9/
@@ -5,7 +9,7 @@
 /backend/include/
 /backend/share/
 /backend/pyvenv.cfg
-/backend/.env
+__pycache__/
 
 # Frontend specific
 /frontend/node_modules/
@@ -17,4 +21,3 @@
 /frontend/docs/index.html
 /frontend/docs/pug-modules/
 
-/docker/*.env
