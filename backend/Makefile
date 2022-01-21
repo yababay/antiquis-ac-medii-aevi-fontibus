@@ -1,8 +1,5 @@
+MODULES_DIR = "$(shell ls -d lib/*/site-packages)"
+
 all:
-	export BACKEND_TEST=123
-	@if [ -z "`env | grep VIRTUAL_ENV`"]; then \
-		echo "No virtual env detected. Please run\n\n. bin/activate\n\nin this directory.";  \
-		else \
-		pip3 install -r requirements.txt; \
-		fi
+	@pip3 install -r requirements.txt -t ${MODULES_DIR}
 

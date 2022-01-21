@@ -1,6 +1,6 @@
 SUBDIRS = frontend backend
 
-all: init_backend
+init: init_backend
 	for dir in $(SUBDIRS); do \
 		$(MAKE) -C $$dir; \
 	done
