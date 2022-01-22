@@ -1,0 +1,31 @@
+# Common cases
+.tmp/
+*.env
+
+# Assets
+/assets/corpus/
+/assets/aspects/
+/assets/analitics/
+
+# Backend specific
+/backend/bin/
+/backend/lib/python3.9/
+/backend/lib64
+/backend/include/
+/backend/share/
+/backend/pyvenv.cfg
+__pycache__/
+
+# Frontend specific
+/frontend/node_modules/
+/frontend/.tmp/
+/frontend/docs/build/
+/frontend/docs/content/comments/
+/frontend/docs/library.json
+
+# Static factory
+/frontend/src/pug_modules/
+/frontend/docs/vendors/
+/frontend/docs/index.html
+/frontend/docs/pug-modules/
+
