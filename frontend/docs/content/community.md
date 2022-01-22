@@ -1,3 +1,3 @@
 # Как принять участие в проекте
 
-Напишите админу.
+Замечания и предложения можно оставлять в разделе [Issues](https://github.com/yababay/antiquis-ac-medii-aevi-fontibus/issues).
