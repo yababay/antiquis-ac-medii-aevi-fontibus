@@ -1,3 +1,11 @@
+.docs-sidebar {
+    width: 480px !important;
+}
+
+.docs-content {
+    margin-left: 480px !important;
+}
+
 footer {
     border-top: 1px solid silver;
 	display: flex;

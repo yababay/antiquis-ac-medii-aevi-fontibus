@@ -1,7 +1,9 @@
+#!/usr/bin/env python3
+
 import logging
 import os
 from aiohttp_setup import aiohttp_setup as setup_aiohttp
-from lib.www import routes
+from lib.yababay.routes import routes
 from dotenv import load_dotenv
 
 logging.basicConfig(level=logging.DEBUG)

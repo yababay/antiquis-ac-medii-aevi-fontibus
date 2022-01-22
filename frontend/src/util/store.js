@@ -1,13 +1,14 @@
-/* 
 import { writable } from 'svelte/store';
 
-const foo = writable(null)
+const sourcesRaw = writable([])
+const sourcesDict = {}
 
-foo.subscribe(something => {
-    console.log(something)
+sourcesRaw.subscribe(items => {
+    for(const item of items){
+        const {sha256, authors, title} = item
+        sourcesDict[sha256] = {authors, title}
+    }
 })
 
-*/
-
-export default null
+export { sourcesRaw, sourcesDict }
 

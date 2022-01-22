@@ -2,6 +2,11 @@
 .tmp/
 *.env
 
+# Assets
+/assets/corpus/
+/assets/aspects/
+/assets/analitics/
+
 # Backend specific
 /backend/bin/
 /backend/lib/python3.9/
@@ -14,6 +19,8 @@ __pycache__/
 # Frontend specific
 /frontend/node_modules/
 /frontend/.tmp/
+/frontend/docs/build/
+/frontend/docs/library.json
 
 # Static factory
 /frontend/src/pug_modules/
