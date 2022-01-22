@@ -1,3 +1,12 @@
+pre {
+    overflow: unset !important;
+    padding-left: 60%;
+}
+
+pre code {
+    padding-left: 0;
+}
+
 .docs-sidebar {
     width: 480px !important;
 }

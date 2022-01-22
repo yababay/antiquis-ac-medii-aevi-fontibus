@@ -1,8 +1,8 @@
 {
     "author": "Михаил Беляков",
-    "title":  "Привет, мир!",
-    "brand":  "Привет, мир!",
-    "description": "Шаблон (template) для проектов на основе svelte с использованием pug.",
+    "title": "AMAF",
+    "brand": "Antiquis ac medii aevi fontibus",
+    "description": "Этнологический анализ античных и средневековых источников.",
     "homeLink": "/",
 
     "navbarIcons": [
