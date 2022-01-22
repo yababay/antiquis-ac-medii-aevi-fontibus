@@ -30,14 +30,17 @@ for book_id in db.books_in_virtual_library('Antiquis ac medii aevi fontibus'):
     fields['is_source'] = is_source
     fields['sha256'] = sha256
     comments = fields['comments']
-    if is_source and comments:
-        comments = fields['comments'].strip().replace('\n', '')
+    if comments:
+        comments = comments.strip().replace('\n', '')
         years = [int(year) for year in re.findall(re_year, comments)]
         year = 1000 if not years else max(years)
         era_is_negative = re.match(re_era, comments)
         if era_is_negative:
             year = 0 - year
         fields['year'] = year
+        with open(f'../frontend/docs/content/comments/{sha256}.md', 'w') as fn:
+            fn.write(fields['comments'].strip())
+        del fields['comments']
     books.append(fields)
     file_name = f'../assets/corpus/{sha256}.txt'
     if not isfile(file_name):

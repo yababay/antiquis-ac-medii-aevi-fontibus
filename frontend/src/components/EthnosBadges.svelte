@@ -29,12 +29,18 @@
     {/each}
   </div>
 </div>
-<div class="container" bind:this={paragraphs}/>
+<div class="container paras" bind:this={paragraphs}/>
 
 <style>
     .badges {
         margin: 4rem 1rem;
         width: 100%;
+    }
+
+    .paras {
+        margin-left: 3rem;
+        padding-left: 1rem;
+        border-left: 2px solid silver;
     }
 </style>
 

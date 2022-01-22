@@ -16,10 +16,12 @@
         margin-left: .5rem;
     }
     .badge {
-        background-color: steelblue;
+        background-color: #CFDEEC;
+        color: #386890;
     }
     .badge:hover {
-        background-color: #386890;
+        background-color: steelblue;
+        color: #D9E5F0;
     }
 </style>
 

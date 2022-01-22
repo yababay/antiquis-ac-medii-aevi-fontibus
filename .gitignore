@@ -20,6 +20,7 @@ __pycache__/
 /frontend/node_modules/
 /frontend/.tmp/
 /frontend/docs/build/
+/frontend/docs/content/comments/
 /frontend/docs/library.json
 
 # Static factory
