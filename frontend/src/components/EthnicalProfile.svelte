@@ -2,7 +2,7 @@
     import { onMount } from 'svelte'
     import { sourcesDict } from '../util/store.js'
     import EthnicalBarChart from './EthnicalBarChart.js'
-    //import EthnosBadges from './EthnosBadges.svelte'
+    import EthnosBadges from './EthnosBadges.svelte'
 
     export let data, link
     let figure
@@ -16,10 +16,10 @@
 </script>
 
 <figure bind:this={figure} class="profile-holder"/>
-<!-- EthnosBadges data={data} link={link}/ -->
+<EthnosBadges data={data} link={link} />
 
 <style>
     .profile-holder {
-        margin: 3rem;
+        margin: 1rem 0;
     }
 </style>

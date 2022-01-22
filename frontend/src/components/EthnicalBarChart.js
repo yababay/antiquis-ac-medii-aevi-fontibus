@@ -5,6 +5,7 @@ class EthnicalBarChart extends D3SimpleBarChart {
     setupData(data){
         return data.map(el => ({label: el[0], value: el[1][0]}))
             .filter(el => el.label != 'весь')
+            .filter(el => el.label != 'меря')
             .slice(0, 20)
     }
 

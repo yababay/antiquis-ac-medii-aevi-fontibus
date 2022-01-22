@@ -4,7 +4,7 @@
     export let link
 
     async function getProfile(){
-        const res = await fetch(link)
+        const res = await fetch(link.replace('ethnical', 'ethnical/count'))
         if(res.status != 200) throw 'Ошибка при загрузке контента.'
         return await res.json()
     }
